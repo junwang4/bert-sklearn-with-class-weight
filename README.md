@@ -1,4 +1,4 @@
-## Forked from [charles9n's bert-sklearn] (https://github.com/charles9n/bert-sklearn)
+## Forked from [https://github.com/charles9n/bert-sklearn](https://github.com/charles9n/bert-sklearn)
 
 Adapted for handling imbalanced classes
 
