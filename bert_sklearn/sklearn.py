@@ -459,7 +459,7 @@ class BaseBertEstimator(BaseEstimator):
         is a finetuned BertPlusMLP
         """
         print("Loading model from %s..."%(restore_file))
-        state = torch.load(restore_file)
+        state = torch.load(restore_file, weights_only=False)
 
         params = state['params']
         self.set_params(**params)
@@ -828,7 +828,7 @@ def load_model(filename):
         ----------
         model : BertClassifier, BertRegressor, or BertTokenClassifier model
     """
-    state = torch.load(filename)
+    state = torch.load(filename, weights_only=False)
     class_name = state['class_name']
 
     classes = {
